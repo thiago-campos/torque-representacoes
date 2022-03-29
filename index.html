@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Torquato Comercio e Representações</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- 383b8d -->
+</head>
+<body>
+    <section class="sec">
+        <header>
+            <a href="#"><img src="torquato-logo.png" class="logo" alt="Logo da empresa"></a>
+            <div class="toggleMenu"></div>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Sobre nós</a></li>
+                <li><a href="#">Produtos</a></li>
+                <li><a href="#">Fornecedores</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </header>
+        <!-- <div class="slider">
+            <input type="radio" name="slider">
+            <div class="imgBx">
+                <img src="">
+                <div class="content">
+                    <h2>Slide Onde</h2>
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                        Minus nesciunt sint molestiae. Officia perspiciatis laboriosam 
+                        accusamus laborum quas necessitatibus ex sequi 
+                        similique autem illum natus, numquam cumque eum, porro fugiat!
+                    </p>
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+        </div> -->
+        <div class="content">
+            <div class="textBox">
+                <h2>26 anos de <br> <span>excelência!</span></h2>
+                <p>
+                    <strong><em>Torquato Representações</em></strong>, há 26 anos trabalhando com qualidade e excelência.
+                    Transformadores monofásico e trifásicos, cabos de cobre de média e alta tensão, 
+                    isoladores poliméricos, tudo isso e mais a pronta entrega!
+                </p>
+                <a href="https://api.whatsapp.com/send?phone=5565992631801">Agendar Visita</a>
+            </div>
+            <div class="imgBox">
+                <img src="images/transformador-trifasicos-01.png" alt="Isolador 1" class="firstProduct">
+                <!-- <img src="images/isoladores_1.png" alt="Isolador 1"> -->
+            </div>
+        </div>
+        <ul class="thumb">
+            <li><img src="images/transformador-trifasicos-01.png" onclick="imgSlider('images/transformador-trifasicos-01.png');"></li>
+            <li><img src="images/cabo-eletrico.png" onclick="imgSlider('images/cabo-eletrico.png');"></li>
+            <li><img src="images/isoladores_1.png" onclick="imgSlider('images/isoladores_1.png');"></li>
+        </ul>
+        <ul class="sci">
+            <li><a href="#"><img src="images/facebook.png"></a></li>
+            <li><a href="#"><img src="images/instagram.png"></a></li>
+            <li><a href="#"><img src="images/twitter.png"></a></li>
+        </ul>
+        
+    </section>
+    <section class="content-2">
+        <h1>Nossos principais produtos e serviços</h1> <br>
+            <div class="cardProducts">
+                <div class="box-icon">
+                    <img src="images/energy.png" alt="service icon one">
+                </div>
+                <h4><a href="#"></a>Transformadores</h4></a>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                   Et labore sit at cum maiores distinctio quisquam
+                </p>
+            </div>
+            <div class="cardProducts">
+                <div class="box-icon">
+                    <img src="images/energy.png" alt="service icon one">
+                </div>
+                <h4><a href="#"></a>Cabos</h4></a>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                   Et labore sit at cum maiores distinctio quisquam
+                </p>
+            </div>
+            <div class="cardProducts">
+                <div class="box-icon">
+                    <img src="images/energy-settings.png" alt="service icon one">
+                </div>
+                <h4><a href="#"></a>Isoladores</h4></a>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                   Et labore sit at cum maiores distinctio quisquam
+                </p>
+            </div>
+            <div class="cardProducts">
+                <div class="box-icon">
+                    <img src="images/energy-settings.png" alt="service icon one">
+                </div>
+                <h4><a href="#"></a>Outros</h4></a>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                   Et labore sit at cum maiores distinctio quisquam
+                </p>
+            </div>
+    </section>
+    <section class="content-3">
+        
+    </section>
+    <!-- footer -->
+    <br><br><br><br><br> 
+    <footer>
+        <div class="waves">
+            <div class="wave" id="wave1"></div>
+            <div class="wave" id="wave2"></div>
+            <div class="wave" id="wave3"></div>
+            <div class="wave" id="wave4"></div>
+        </div>
+        <ul class="social-icon">
+           <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li> 
+           <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li> 
+           <li><a href="#"><ion-icon name="logo-linkedin"></ion-icon></a></li> 
+           <li><a href="#"><ion-icon name="logo-twitter"></ion-icon></a></li> 
+        </ul>
+        <ul class="menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Sobre nós</a></li>
+            <li><a href="#">Produtos</a></li>
+            <li><a href="#">Fornecedores</a></li>
+            <li><a href="#">Contato</a></li>
+        </ul>
+        <p>&#169 2022 Torquato Representações | Todos os direitos reservados</p>
+    </footer>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script type="text/javascript">
+        function imgSlider(anything){
+            document.querySelector('.firstProduct').src = anything;
+        }
+    </script>
+</body>
+</html>

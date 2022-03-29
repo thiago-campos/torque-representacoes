@@ -1,0 +1,378 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+section
+{
+    position: relative;
+    min-height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+}
+header
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .logo
+{
+    position: relative;
+    max-width: 90px;
+}
+header ul
+{
+    position: relative;
+    display: flex;
+}
+header ul li
+{
+    list-style: none;
+    margin: 0 20px;
+    transition: 0.5s;
+}
+header ul li a
+{
+    display: inline-block;
+    color: #111;
+    font-weight: 400px;
+    margin-left: 40px;
+    text-decoration: none;
+    padding: 5px;
+    transition: 0.5s;
+}
+header ul:hover li a
+{
+    transform: scale(1);
+    opacity: .2;
+}
+header ul li a:hover
+{
+    color: #fff;
+    transform: scale(1.2);
+    opacity: 1;
+}
+header ul li a:before
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:#383b8d;
+    transition: 0.5s;
+    transform-origin: right;
+    border-radius: 5px;
+    transform: scaleX(0);
+    z-index: -1;
+}
+header ul li a:hover:before
+{
+    transition: 0.5s;
+    transform-origin: left;
+    transform: scaleX(1);
+}
+.content
+{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.content .textBox
+{
+    position: relative;
+    max-width: 600px;
+}
+.content .textBox h2
+{
+    color:#383b8d;
+    font-size: 3em;
+    line-height: 1.5em;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+.content .textBox h2 span
+{
+    font-size: 1.5em;
+}
+.content .textBox p
+{
+    color: #111;
+}
+.content .textBox a
+{
+    display: inline-block;
+    margin-top: 25px;
+    padding: 10px 25px;
+    background: #383b8d;
+    color: #fff;
+    border-radius: 40px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-decoration: none;
+    /* text-transform: uppercase; */
+    box-shadow: 0px 15px 35px 0px rgba(50, 39, 194, 0.40)
+}
+.content .textBox a:hover
+{
+  background: #1a1c57;
+}
+.content .imgBox
+{
+    width: 600px;
+    display: flex;
+    padding-right: 35px;
+    margin-top: 50px;
+    justify-content: flex-end;
+}
+.content .imgBox img
+{
+    max-width: 500px !important;
+    min-width: 500px !important;
+}
+.thumb
+{
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    transform: translateX(-50%);
+    display: flex;
+}
+.thumb li
+{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.thumb li:hover
+{
+    transform: translateY(-15px);
+    filter: saturate(4);
+}
+.thumb li img
+{
+    max-width: 45px;
+}
+.sci
+{
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.sci li
+{
+    list-style: none;
+}
+.sci li a
+{
+    display: inline-block;
+    margin: 5px 0px;
+    transform: scale(0.6);
+}
+.sci li a:hover
+{
+  transform: translateY(-5px);
+  box-shadow: #383b8d;
+}
+.content-2
+{
+  top: 100%;
+  position: relative; 
+  width: 100%;
+  padding: 0;
+  min-height: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background: #383b8d;
+  padding-bottom: 80px;
+}
+.content-2 h1
+{
+  position: relative;
+  width: 100%;
+  margin-top: 60px;
+  margin-bottom:60px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 1.9em;
+  font-weight: 700;
+  color: rgb(220, 220, 220);
+}
+.content-2 .cardProducts
+{
+  width: 40%;
+  position: relative;
+  margin: 10px 20px 10px;
+  border: solid 2px #6b6a6a;
+  border-radius: 20px;
+  justify-content: space-between;
+  flex-direction: column; 
+}
+.content-2 .cardProducts .box-icon
+{
+  filter:invert(1);
+  margin: 5px 20px 10px;
+ /* justify-content: space-between;  */
+}
+.content-2 .cardProducts .box-icon img
+{
+  max-width: 90px;
+  margin: 10px;
+}
+.content-2 .cardProducts h4
+{
+  color: #fff;
+  font-size: 1.3em;
+  font-weight: 600;
+  margin: 10px 20px;
+  max-width: 40%;
+}
+.content-2 .cardProducts p
+{
+  color: rgb(172, 172, 172);
+  font-size: 1em;
+  margin: 10px 20px;
+}
+
+/* footer */
+footer {
+    position: relative;
+    width: 100%;
+    background: #383b8d;
+    min-height: 100px;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  footer .social-icon,
+  .menu {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    flex-wrap: wrap;
+  }
+  
+  footer .social-icon li,
+  .menu li {
+    list-style: none;
+  }
+  
+  footer .social-icon li a {
+    display: inline-block;
+    font-size: 2em;
+    color: #ffff;
+    margin: 0 10px;
+    transition: 0.5s;
+  }
+  
+  footer .menu li a {
+    display: inline-block;
+    font-size: 1.1em;
+    color: #ffff;
+    margin: 0 10px;
+    transition: 0.5s;
+    text-decoration: none;
+    opacity: 0.75;
+  }
+  
+  footer .social-icon li a:hover {
+    transform: translateY(-10px);
+  }
+  
+  footer .menu li a:hover {
+    opacity: 1;
+  }
+  
+  footer p {
+    font-size: 0.9em;
+    color: #ffff;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 10px;
+  }
+  
+  footer .wave {
+    position: absolute;
+    top: -100px;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: url(images/wave.png);
+    background-size: 1000px 100px;
+  }
+  
+  footer .wave#wave1 {
+    z-index: 1000;
+    opacity: 1;
+    bottom: 0;
+    animation: animateWave 4s linear infinite;
+  }
+  
+  footer .wave#wave2 {
+    z-index: 999;
+    opacity: 0.5;
+    bottom: 10px;
+    animation: animateWave_02 4s linear infinite;
+  }
+  
+  footer .wave#wave3 {
+    z-index: 1000;
+    opacity: 0.2;
+    bottom: 15px;
+    animation: animateWave 3s linear infinite;
+  }
+  
+  footer .wave#wave4 {
+    z-index: 999;
+    opacity: 0.7;
+    bottom: 20px;
+    animation: animateWave_02 3s linear infinite;
+  }
+  
+  @keyframes animateWave {
+    0% {
+      background-position-x: 1000px;
+    }
+    100% {
+      background-position-x: 0px;
+    }
+  }
+  
+  @keyframes animateWave_02 {
+    0% {
+      background-position-x: 0px;
+    }
+    100% {
+      background-position-x: 1000px;
+    }
+  }

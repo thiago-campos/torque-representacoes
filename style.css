@@ -285,7 +285,8 @@ header ul li a:hover:before
 }
 .content-3 .box h2
 {
-  top: 15%;
+  padding-top: 10%;
+  font-size: 2em;
   color: #383b8d;
 }
 .content-3 .box a
